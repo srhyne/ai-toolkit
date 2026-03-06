@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories — ignore contents but keep skill symlinks
+.cursor/*
+!.cursor/skills
+.cline/
+.claude/*
+!.claude/skills
+.vscode/
+.idea/
+
+# Skill node_modules (installed at runtime by self-aware skills)
+**/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
