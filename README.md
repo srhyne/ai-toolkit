@@ -145,41 +145,12 @@ The `.ai-toolkit` file at the repo root identifies this directory as the AI Tool
 
 Note: I'm just calling out the skill with /, these are not commands but another way to reference a skill. 
 
-### Pulling Logs from New Relic
-
-- `/log-expert Get the last 10 ConveYour errors, then look through my current workspace to explain where and why the errors occurred` - [screnshot](https://share.zight.com/eDuOk5XX)
-- `/log-expert Pull the last 15 logs for context.org_domain sunrun`
-- `/log-expert Can you get me the last 10 errors for domain dthvivinttraining`
-
-
 ### Faster git & merge operations
 
 - `/branch-reviewer my current branch to master` to get a quick exec summary of changes, optionally do a deep dive on the branch
 - `/git-commit-push` that's it. I use it a ton to get tight commits and push to my merge branch quickly.
 - `/generate-squash-commit` Does something similar to branch reviewer, but it's just more focused on just generating a squash commit. I use often when merging in GitLab. 
 
-### Infrastructure
+### Convert Frontend to Skill
 
-- `/do-expert help me understand the topology for all droplets starting with "v" or "ny-v".` - incredible response, [see image](https://share.zight.com/WnuvzyEr)
-- `/do-expert help me understand the state of all of my apps.` - [see image](https://share.zight.com/o0udyR8O)
-
-### ConveYour Admin
-An interface for working with the admin RPC API. 
-
-- `/conveyour-admin help me understand the state of this contact 697952853d612b01b9743889 and help me better understand what has run on this contact in terms of trigger logs. Help me visually understand how they got to the state that they're in through their campaigns and triggers.`
-
-    - [creates entire write-up](https://share.zight.com/kpu2BJNv)
-    - [creates visuals mapping process](https://share.zight.com/QwuZxL9W)
-
-### ConveYour Changelog
-Generate customer-facing release notes from git history.
-
-- `/conveyour-changelog Generate a changelog for the last 30 days` — scans backend + frontend master branches, correlates changes, detects feature flags, and produces a polished changelog for product marketing / CS
-- `/conveyour-changelog What improvements have we shipped since January 1st?`
-
-### ConveYour Data Expert
-A skill trained on ConveYour's Singlestore data!
-
-- `/conveyour-data-expert  What organization has the most running active triggers within a single campaign? I've use the active triggers view for this.` 
-
-    - [ creates nice data summary ](https://share.zight.com/04uj9EL2)
+- `/convert-frontend-to-skill Convert my Vue admin panel into a skill` — scans the frontend codebase for API calls, catalogs every backend resource, and generates a new skill that lets an agent interact with those APIs directly without needing the UI
